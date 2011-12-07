@@ -1,4 +1,4 @@
-<html> 
+<!DOCTYPE html>
 <head> 
 <title>Email Address Encoder</title> 
 <script type="text/javascript">
@@ -131,6 +131,7 @@ function selectAll(id)
 		color: #333;
 		width: 600px;
 		margin: 40px auto 0;
+		padding-bottom: 15px;
 	}
 	
 	h1 {
@@ -199,8 +200,9 @@ function selectAll(id)
 <form name="emailEncoder" onsubmit="encodeEmail(); return false;"> 
 	<input type="text" size="60" name="originalEmail" placeholder="Original Email Address" id="f1" onclick="selectAll('f1');" onblur="selectAll('f2');"><br>
 	<textarea name="encodedEmail" rows="6" cols="60" placeholder="Encoded Email Address" id="f2" onclick="selectAll('f2');"></textarea><br>
-	<input type="submit" value="Encode"> <input type="reset" value="Reset"> 
+	<input type="submit" value="Encode!"> <input type="reset" value="Reset"> 
 </form>
 </div>
+<!-- Inspired by http://www.wbwip.com/wbw/emailencoder.html -->
 </body> 
 </html> 

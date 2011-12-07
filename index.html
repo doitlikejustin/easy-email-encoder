@@ -92,7 +92,14 @@ function encodeEmail()
 			else { encodedEmail += "&#" + charNum + ";" }
 		}		
 		document.emailEncoder.encodedEmail.value = encodedEmail;
+		
+		selectAll('f2');
 	}
+}
+function selectAll(id)
+{
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
 }
 </script>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
@@ -141,7 +148,7 @@ function encodeEmail()
 		font-family: 'Ubuntu Mono', Arial, sans-serif;
 	}
 	
-	input[type="text"]:focus, textarea:focus {
+	input[type="text"]:focus, textarea:focus, input[type="submit"]:focus, input[type="reset"]:focus {
 		border-color: #fe57a1;
 		outline: none;
 	}
@@ -190,8 +197,8 @@ function encodeEmail()
 <div id="container">
 <h1>Easy Email Encoder</h1>
 <form name="emailEncoder" onsubmit="encodeEmail(); return false;"> 
-	<input type="text" size="60" name="originalEmail" placeholder="Original Email Address"><br>
-	<textarea name="encodedEmail" rows="6" cols="60" placeholder="Encoded Email Address"></textarea><br>
+	<input type="text" size="60" name="originalEmail" placeholder="Original Email Address" id="f1" onclick="selectAll('f1');" onblur="selectAll('f2');"><br>
+	<textarea name="encodedEmail" rows="6" cols="60" placeholder="Encoded Email Address" id="f2" onclick="selectAll('f2');"></textarea><br>
 	<input type="submit" value="Encode"> <input type="reset" value="Reset"> 
 </form>
 </div>

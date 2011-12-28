@@ -9,3 +9,8 @@ How To Use
 1. Enter email
 2. Press enter (or hit "Encode")
 3. Copy/Paste into your website or database
+
+Example
+-------
+
+[http://www.justinscarpetti.com/projects/easy-email-encoder/](http://www.justinscarpetti.com/projects/easy-email-encoder/)

@@ -16,80 +16,80 @@ function encodeEmail()
 		var emailLength = originalEmail.length;
 		for(i=0; i<emailLength; i++)
 		{
-			var charNum = "000";
-			var curChar = originalEmail.charAt(i);
+			var num = "000";
+			var char = originalEmail.charAt(i);
 		
-			     if (curChar == "A") { charNum = "065" }
-			else if (curChar == "a") { charNum = "097" }
-			else if (curChar == "B") { charNum = "066" }
-			else if (curChar == "b") { charNum = "098" }
-			else if (curChar == "C") { charNum = "067" }
-			else if (curChar == "c") { charNum = "099" }
-			else if (curChar == "D") { charNum = "068" }
-			else if (curChar == "d") { charNum = "100" }
-			else if (curChar == "E") { charNum = "069" }
-			else if (curChar == "e") { charNum = "101" }
-			else if (curChar == "F") { charNum = "070" }
-			else if (curChar == "f") { charNum = "102" }
-			else if (curChar == "G") { charNum = "071" }
-			else if (curChar == "g") { charNum = "103" }
-			else if (curChar == "H") { charNum = "072" }
-			else if (curChar == "h") { charNum = "104" }
-			else if (curChar == "I") { charNum = "073" }
-			else if (curChar == "i") { charNum = "105" }
-			else if (curChar == "J") { charNum = "074" }
-			else if (curChar == "j") { charNum = "106" }
-			else if (curChar == "K") { charNum = "075" }
-			else if (curChar == "k") { charNum = "107" }
-			else if (curChar == "L") { charNum = "076" }
-			else if (curChar == "l") { charNum = "108" }
-			else if (curChar == "M") { charNum = "077" }
-			else if (curChar == "m") { charNum = "109" }
-			else if (curChar == "N") { charNum = "078" }
-			else if (curChar == "n") { charNum = "110" }
-			else if (curChar == "O") { charNum = "079" }
-			else if (curChar == "o") { charNum = "111" }
-			else if (curChar == "P") { charNum = "080" }
-			else if (curChar == "p") { charNum = "112" }
-			else if (curChar == "Q") { charNum = "081" }
-			else if (curChar == "q") { charNum = "113" }
-			else if (curChar == "R") { charNum = "082" }
-			else if (curChar == "r") { charNum = "114" }
-			else if (curChar == "S") { charNum = "083" }
-			else if (curChar == "s") { charNum = "115" }
-			else if (curChar == "T") { charNum = "084" }
-			else if (curChar == "t") { charNum = "116" }
-			else if (curChar == "U") { charNum = "085" }
-			else if (curChar == "u") { charNum = "117" }
-			else if (curChar == "V") { charNum = "086" }
-			else if (curChar == "v") { charNum = "118" }
-			else if (curChar == "W") { charNum = "087" }
-			else if (curChar == "w") { charNum = "119" }
-			else if (curChar == "X") { charNum = "088" }
-			else if (curChar == "x") { charNum = "120" }
-			else if (curChar == "Y") { charNum = "089" }
-			else if (curChar == "y") { charNum = "121" }
-			else if (curChar == "Z") { charNum = "090" }
-			else if (curChar == "z") { charNum = "122" }
-			else if (curChar == "0") { charNum = "048" }
-			else if (curChar == "1") { charNum = "049" }
-			else if (curChar == "2") { charNum = "050" }
-			else if (curChar == "3") { charNum = "051" }
-			else if (curChar == "4") { charNum = "052" }
-			else if (curChar == "5") { charNum = "053" }
-			else if (curChar == "6") { charNum = "054" }
-			else if (curChar == "7") { charNum = "055" }
-			else if (curChar == "8") { charNum = "056" }
-			else if (curChar == "9") { charNum = "057" }
-			else if (curChar == "&") { charNum = "038" }
-			else if (curChar == " ") { charNum = "032" }
-			else if (curChar == "_") { charNum = "095" }
-			else if (curChar == "-") { charNum = "045" }
-			else if (curChar == "@") { charNum = "064" }
-			else if (curChar == ".") { charNum = "046" }
+			     if (char == "A") { num = "065" }
+			else if (char == "a") { num = "097" }
+			else if (char == "B") { num = "066" }
+			else if (char == "b") { num = "098" }
+			else if (char == "C") { num = "067" }
+			else if (char == "c") { num = "099" }
+			else if (char == "D") { num = "068" }
+			else if (char == "d") { num = "100" }
+			else if (char == "E") { num = "069" }
+			else if (char == "e") { num = "101" }
+			else if (char == "F") { num = "070" }
+			else if (char == "f") { num = "102" }
+			else if (char == "G") { num = "071" }
+			else if (char == "g") { num = "103" }
+			else if (char == "H") { num = "072" }
+			else if (char == "h") { num = "104" }
+			else if (char == "I") { num = "073" }
+			else if (char == "i") { num = "105" }
+			else if (char == "J") { num = "074" }
+			else if (char == "j") { num = "106" }
+			else if (char == "K") { num = "075" }
+			else if (char == "k") { num = "107" }
+			else if (char == "L") { num = "076" }
+			else if (char == "l") { num = "108" }
+			else if (char == "M") { num = "077" }
+			else if (char == "m") { num = "109" }
+			else if (char == "N") { num = "078" }
+			else if (char == "n") { num = "110" }
+			else if (char == "O") { num = "079" }
+			else if (char == "o") { num = "111" }
+			else if (char == "P") { num = "080" }
+			else if (char == "p") { num = "112" }
+			else if (char == "Q") { num = "081" }
+			else if (char == "q") { num = "113" }
+			else if (char == "R") { num = "082" }
+			else if (char == "r") { num = "114" }
+			else if (char == "S") { num = "083" }
+			else if (char == "s") { num = "115" }
+			else if (char == "T") { num = "084" }
+			else if (char == "t") { num = "116" }
+			else if (char == "U") { num = "085" }
+			else if (char == "u") { num = "117" }
+			else if (char == "V") { num = "086" }
+			else if (char == "v") { num = "118" }
+			else if (char == "W") { num = "087" }
+			else if (char == "w") { num = "119" }
+			else if (char == "X") { num = "088" }
+			else if (char == "x") { num = "120" }
+			else if (char == "Y") { num = "089" }
+			else if (char == "y") { num = "121" }
+			else if (char == "Z") { num = "090" }
+			else if (char == "z") { num = "122" }
+			else if (char == "0") { num = "048" }
+			else if (char == "1") { num = "049" }
+			else if (char == "2") { num = "050" }
+			else if (char == "3") { num = "051" }
+			else if (char == "4") { num = "052" }
+			else if (char == "5") { num = "053" }
+			else if (char == "6") { num = "054" }
+			else if (char == "7") { num = "055" }
+			else if (char == "8") { num = "056" }
+			else if (char == "9") { num = "057" }
+			else if (char == "&") { num = "038" }
+			else if (char == " ") { num = "032" }
+			else if (char == "_") { num = "095" }
+			else if (char == "-") { num = "045" }
+			else if (char == "@") { num = "064" }
+			else if (char == ".") { num = "046" }
 			
-			if (charNum == "000") { encodedEmail += curChar }
-			else { encodedEmail += "&#" + charNum + ";" }
+			if (num == "000") { encodedEmail += char }
+			else { encodedEmail += "&#" + num + ";" }
 		}		
 		document.emailEncoder.encodedEmail.value = encodedEmail;
 		
